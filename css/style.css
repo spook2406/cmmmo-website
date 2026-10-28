@@ -215,6 +215,14 @@ h1, h2, h3 { margin: 0 0 0.6rem; font-weight: 600; letter-spacing: -0.02em; }
 }
 .cta { text-align: center; padding: 2rem 1rem; }
 .product-hero__media { max-width: 520px; margin: 0 auto; }
+
+.product-mark {
+  display: block;
+  margin: 0 auto 0.75rem;
+  height: auto;
+  max-width: 280px;
+}
+
 .product-detail__specs { margin-top: 2.5rem; }
 .company-info { margin-top: 1.75rem; display: grid; gap: 1rem; }
 .company-info__row { display: grid; gap: 0.25rem; }
