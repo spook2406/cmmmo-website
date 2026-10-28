@@ -1,293 +1,174 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="温州酷默技术科技有限公司（酷默 / cmmmo / CEEMO）官方网站，专注技术服务与健康智能硬件，旗舰产品酷默电动剃须刀 X1 Pro。" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="温州酷默技术科技有限公司（酷默 / cmmmo / CEEMO）官方网站。旗舰产品酷默电动剃须刀 X1 Pro，掌心大小，澎湃动力。">
+  <meta name="theme-color" content="#000000">
   <title>酷默 cmmmo | 温州酷默技术科技有限公司</title>
-    <link rel="icon" type="image/png" href="images/brand/favicon.png" />
-  <link rel="apple-touch-icon" href="images/brand/cmmmo-logo-co.png" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="images/brand/favicon.png">
+  <link rel="apple-touch-icon" href="images/brand/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preload" as="image" href="images/x1pro/product-front-585.webp" type="image/webp" fetchpriority="high">
 </head>
 <body>
-  <!-- ======================================================================
-       Site Header (shared across all pages - keep structure identical)
-       ====================================================================== -->
-  <header class="site-header">
-    <div class="container site-header__inner">
-            <a class="brand" href="index.html" aria-label="酷默 cmmmo 首页">
-        <img class="brand__logo" src="images/brand/cmmmo-logo-co.png" width="44" height="28" alt="cmmmo CO logo" />
-        <span class="brand__name">
-          酷默 cmmmo
-          <small>温州酷默技术科技</small>
-        </span>
+<a class="skip" href="#main">跳到主要内容</a>
+  <header class="nav">
+    <div class="nav__bar">
+      <a class="nav__brand" href="index.html" aria-label="酷默 cmmmo 首页">
+        <img src="images/brand/logo-mark-white.png" width="116" height="80" alt="">
+        <span>cmmmo</span>
       </a>
-
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-label="切换导航菜单"
-        aria-expanded="false"
-        aria-controls="primary-navigation"
-      >
-        <span class="nav-toggle__bar" aria-hidden="true"></span>
-        <span class="nav-toggle__bar" aria-hidden="true"></span>
-        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="打开菜单">
+        <span></span>
+        <span></span>
       </button>
-
-      <nav class="nav-menu" id="primary-navigation" aria-label="主导航">
-                <ul class="nav-menu__list">
-          <li><a class="nav-menu__link" href="index.html">首页</a></li>
-          <li><a class="nav-menu__link" href="about.html">关于我们</a></li>
-          <li><a class="nav-menu__link" href="products.html">产品中心</a></li>
-          <li><a class="nav-menu__link" href="product-x1pro.html">X1 Pro</a></li>
-          <li><a class="nav-menu__link" href="contact.html">联系我们</a></li>
-        </ul>
-        <a class="btn btn--primary btn--block nav-menu__cta" href="contact.html">
-          立即咨询
-        </a>
-      </nav>
     </div>
   </header>
+  <nav class="nav__panel" id="nav-panel" aria-label="主导航">
+    <a href="index.html" aria-current="page">首页</a>
+    <a href="about.html">关于</a>
+    <a href="products.html">产品</a>
+    <a href="product-x1pro.html">X1 Pro</a>
+    <a href="contact.html">联系</a>
+  </nav>
 
-  <main>
-    <!-- ====================================================================
-         Hero Section
-         ==================================================================== -->
-    <section class="hero">
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <span class="hero__eyebrow">酷默 cmmmo · 技术与健康双轮驱动</span>
-          <h1 class="hero__title">
-            掌心大小，净剃有型<br />
-            <em>酷默电动剃须刀 X1 Pro</em>
-          </h1>
-          <p class="hero__lead">
-            温州酷默技术科技有限公司（品牌 酷默 / cmmmo / CEEMO）专注技术服务与健康智能硬件。
-            旗舰产品 X1 Pro：干湿双剃、全身水洗、Type-C 快充、AI A1 芯片，出差揣兜就走。
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="product-x1pro.html">了解 X1 Pro</a>
-            <a class="btn btn--ghost-light" href="contact.html">联系我们</a>
-          </div>
+<main id="main">
+    <section class="hero" id="top">
+      <div class="hero__copy">
+        <p class="hero__kicker">酷默剃须刀</p>
+        <h1 class="hero__title">X1 Pro</h1>
+        <p class="hero__lede">掌心大小，澎湃动力。</p>
+        <div class="hero__links">
+          <a class="link link--on-dark" href="product-x1pro.html">进一步了解 ›</a>
+          <a class="link link--on-dark" href="contact.html">联系我们 ›</a>
         </div>
-
-        <!-- Decorative visual: hidden from assistive tech, no role="img". -->
-        <div class="hero__visual">
-          <img class="hero__visual-img" src="images/x1pro/hero-palm.png" width="720" height="1280" alt="酷默 cmmmo X1 Pro 掌心大小电动剃须刀" />
+      </div>
+      <div class="hero__media" data-parallax="0.1">
+        <div class="float">
+          <picture>
+            <source type="image/webp" srcset="images/x1pro/product-front-420.webp 420w, images/x1pro/product-front-585.webp 585w" sizes="(min-width: 800px) 520px, 86vw">
+            <img src="images/x1pro/product-front-585.jpg" srcset="images/x1pro/product-front-420.jpg 420w, images/x1pro/product-front-585.jpg 585w" sizes="(min-width: 800px) 520px, 86vw" width="585" height="588" alt="酷默 cmmmo X1 Pro 电动剃须刀正面" loading="eager" fetchpriority="high" decoding="async">
+          </picture>
         </div>
       </div>
     </section>
 
-    <!-- ====================================================================
-         Company Intro Summary
-         ==================================================================== -->
-    <section class="section">
-      <div class="container">
-        <div class="section__header" data-reveal>
-          <span class="section__eyebrow">关于 CEEMO</span>
-          <h2 class="section__title">值得信赖的长期合作伙伴</h2>
-          <p class="section__subtitle">
-            温州酷默技术科技有限公司深耕行业多年，以专业的技术团队与完善的服务体系，
-            为众多客户提供稳定可靠的产品与解决方案。
-          </p>
-        </div>
-
-        <div class="grid grid--3">
-          <article class="card" data-reveal>
-            <span class="card__icon" aria-hidden="true">
-              <svg
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round"
-              >
-                <path d="M12 2 L2 7 L12 12 L22 7 Z" />
-                <path d="M2 17 L12 22 L22 17" />
-                <path d="M2 12 L12 17 L22 12" />
-              </svg>
-            </span>
-            <h3 class="card__title">专业团队</h3>
-            <p class="card__text">
-              汇聚行业资深工程师与顾问，以严谨的工程标准保障每一个项目的交付质量。
-            </p>
-          </article>
-
-          <article class="card" data-reveal>
-            <span class="card__icon" aria-hidden="true">
-              <svg
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round"
-              >
-                <path d="M13 2 L3 14 L12 14 L11 22 L21 10 L12 10 Z" />
-              </svg>
-            </span>
-            <h3 class="card__title">高效交付</h3>
-            <p class="card__text">
-              成熟的流程与敏捷的协作方式，帮助客户在最短周期内获得可落地的成果。
-            </p>
-          </article>
-
-          <article class="card" data-reveal>
-            <span class="card__icon" aria-hidden="true">
-              <svg
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round"
-              >
-                <path d="M12 22 C12 22 20 16 20 9 A8 8 0 0 0 4 9 C4 16 12 22 12 22 Z" />
-                <circle cx="12" cy="9" r="3" />
-              </svg>
-            </span>
-            <h3 class="card__title">持续创新</h3>
-            <p class="card__text">
-              持续投入研发与技术创新，紧跟行业趋势，为客户创造长期价值。
-            </p>
-          </article>
-        </div>
+    <section class="chapter">
+      <div data-reveal>
+        <h2>就是小。</h2>
+        <p class="lede">宽 59.6 毫米，高 66.8 毫米，厚 31.2 毫米。一只手握得住。</p>
       </div>
+      <div class="chapter__media" data-reveal>
+        <picture>
+            <source type="image/webp" srcset="images/x1pro/hand-480.webp 480w, images/x1pro/hand-800.webp 800w" sizes="(max-width: 800px) 100vw, 900px">
+            <img src="images/x1pro/hand-800.jpg" srcset="images/x1pro/hand-480.jpg 480w, images/x1pro/hand-800.jpg 800w" sizes="(max-width: 800px) 100vw, 900px" width="800" height="500" alt="手握酷默 X1 Pro，展示掌心大小的机身" loading="lazy" decoding="async">
+          </picture>
+      </div>
+      <p style="margin-top:22px" data-reveal><a class="link" href="product-x1pro.html#size">看看它有多小 ›</a></p>
     </section>
 
-    <!-- ====================================================================
-         Core Products / Advantages
-         ==================================================================== -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section__header" data-reveal>
-          <span class="section__eyebrow">核心产品</span>
-          <h2 class="section__title">面向未来的产品矩阵</h2>
-          <p class="section__subtitle">
-            覆盖多个业务场景的产品与解决方案，满足不同规模企业的多样化需求。
-          </p>
-        </div>
-
-                <div class="grid grid--3">
-          <article class="product-card" data-reveal>
-            <a class="product-card__media" href="product-x1pro.html">
-              <img src="images/x1pro/hero-palm.png" alt="酷默 X1 Pro" loading="lazy" />
-            </a>
-            <div class="product-card__body">
-              <h3 class="product-card__title">酷默 X1 Pro</h3>
-              <p class="product-card__text">
-                掌心大小电动剃须刀：干湿双剃、全身水洗、Type-C 快充、AI A1 芯片。
-              </p>
-              <ul class="product-card__tags">
-                <li class="tag">硬件</li>
-                <li class="tag">旗舰</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="product-card" data-reveal>
-            <div class="product-card__media">
-              <img src="images/x1pro/feature-motor.png" alt="强磁电机" loading="lazy" />
-            </div>
-            <div class="product-card__body">
-              <h3 class="product-card__title">健康智能硬件</h3>
-              <p class="product-card__text">
-                围绕护理与出行场景持续打磨小体积、强续航、易清洁的智能硬件。
-              </p>
-              <ul class="product-card__tags">
-                <li class="tag">健康</li>
-                <li class="tag">硬件</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="product-card" data-reveal>
-            <div class="product-card__media" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="9" />
-                <path d="M12 3 L12 12 L18 15" />
-              </svg>
-            </div>
-            <div class="product-card__body">
-              <h3 class="product-card__title">技术服务</h3>
-              <p class="product-card__text">
-                软件开发、数字化与定制化解决方案，服务企业客户业务落地。
-              </p>
-              <ul class="product-card__tags">
-                <li class="tag">软件</li>
-                <li class="tag">服务</li>
-              </ul>
-            </div>
-          </article>
-        </div>
+    <section class="chapter chapter--ink">
+      <div data-reveal>
+        <h2>双环弧面。</h2>
+        <p class="lede">刀网顺着脸型走。间隙加宽，4° 浮动，贴住胡须再切断。</p>
       </div>
+      <div class="chapter__media" data-reveal>
+        <picture>
+            <source type="image/webp" srcset="images/x1pro/foil-480.webp 480w, images/x1pro/foil-800.webp 800w" sizes="(max-width: 800px) 100vw, 1000px">
+            <img src="images/x1pro/foil-800.jpg" srcset="images/x1pro/foil-480.jpg 480w, images/x1pro/foil-800.jpg 800w" sizes="(max-width: 800px) 100vw, 1000px" width="800" height="500" alt="X1 Pro 双环弧面刀网特写，蓝色光环示意浮动刀网" loading="lazy" decoding="async">
+          </picture>
+      </div>
+      <p style="margin-top:22px" data-reveal><a class="link link--on-dark" href="product-x1pro.html#foil">进一步了解 ›</a></p>
     </section>
 
-    <!-- ====================================================================
-         CTA Section
-         ==================================================================== -->
-    <section class="section" aria-labelledby="cta-title">
-      <div class="container">
-        <div class="cta" data-reveal>
-          <div class="cta__content">
-            <h2 class="cta__title" id="cta-title">准备好开启合作了吗？</h2>
-            <p class="cta__text">
-              无论您处于哪个发展阶段，CEEMO 都愿意成为您值得信赖的技术伙伴。
-              欢迎随时与我们取得联系。
-            </p>
-          </div>
-          <div class="cta__actions">
-            <a class="btn btn--primary" href="contact.html">立即咨询</a>
-            <a class="btn btn--outline" href="about.html">了解更多</a>
-          </div>
+    <section class="tiles" aria-label="X1 Pro 特性">
+      <a class="tile" href="product-x1pro.html#motor">
+        <div class="tile__copy" data-reveal>
+          <h2>8200 转。</h2>
+          <p>强磁电机，一遍净剃。<br><span class="tile__more">进一步了解 ›</span></p>
         </div>
-      </div>
+        <picture>
+            <source type="image/webp" srcset="images/x1pro/motor-480.webp 480w, images/x1pro/motor-760.webp 760w" sizes="(max-width: 833px) 100vw, 50vw">
+            <img src="images/x1pro/motor-760.jpg" srcset="images/x1pro/motor-480.jpg 480w, images/x1pro/motor-760.jpg 760w" sizes="(max-width: 833px) 100vw, 50vw" width="760" height="480" alt="透明机身中的 X1 Pro 强磁电机" loading="lazy" decoding="async">
+          </picture>
+      </a>
+      <a class="tile" href="product-x1pro.html#wash">
+        <div class="tile__copy" data-reveal>
+          <h2>全身水洗。</h2>
+          <p>干剃劲爽，湿剃温和。<br><span class="tile__more">进一步了解 ›</span></p>
+        </div>
+        <picture>
+            <source type="image/webp" srcset="images/x1pro/wet-480.webp 480w, images/x1pro/wet-800.webp 800w" sizes="(max-width: 833px) 100vw, 50vw">
+            <img src="images/x1pro/wet-800.jpg" srcset="images/x1pro/wet-480.jpg 480w, images/x1pro/wet-800.jpg 800w" sizes="(max-width: 833px) 100vw, 50vw" width="800" height="370" alt="带水珠的 X1 Pro，可全身水洗" loading="lazy" decoding="async">
+          </picture>
+      </a>
+      <a class="tile" href="product-x1pro.html#travel">
+        <div class="tile__copy" data-reveal>
+          <h2>揣兜就走。</h2>
+          <p>长按 3 秒，旅行锁开启。<br><span class="tile__more">进一步了解 ›</span></p>
+        </div>
+        <picture>
+            <source type="image/webp" srcset="images/x1pro/pocket-480.webp 480w, images/x1pro/pocket-790.webp 790w" sizes="(max-width: 833px) 100vw, 50vw">
+            <img src="images/x1pro/pocket-790.jpg" srcset="images/x1pro/pocket-480.jpg 480w, images/x1pro/pocket-790.jpg 790w" sizes="(max-width: 833px) 100vw, 50vw" width="790" height="555" alt="X1 Pro 被放进裤袋" loading="lazy" decoding="async">
+          </picture>
+      </a>
+      <a class="tile" href="product-x1pro.html#power">
+        <div class="tile__copy" data-reveal>
+          <h2>Type-C。</h2>
+          <p>和手机共用一根线。<br><span class="tile__more">进一步了解 ›</span></p>
+        </div>
+        <picture>
+            <source type="image/webp" srcset="images/x1pro/typec-480.webp 480w, images/x1pro/typec-790.webp 790w" sizes="(max-width: 833px) 100vw, 50vw">
+            <img src="images/x1pro/typec-790.jpg" srcset="images/x1pro/typec-480.jpg 480w, images/x1pro/typec-790.jpg 790w" sizes="(max-width: 833px) 100vw, 50vw" width="790" height="780" alt="X1 Pro 在车内以 Type-C 充电" loading="lazy" decoding="async">
+          </picture>
+      </a>
+    </section>
+
+    <section class="statement">
+      <p class="kicker" data-reveal>温州酷默技术科技有限公司</p>
+      <h2 data-reveal>用科技与美学，享受智能生活。</h2>
+      <a class="link" href="about.html" data-reveal>了解酷默 ›</a>
+    </section>
+
+    <section class="cta-band">
+      <h2 data-reveal>想把 X1 Pro 带进你的渠道。</h2>
+      <p data-reveal>采购、定制与合作，从一封邮件开始。</p>
+      <a class="btn" href="contact.html" data-reveal>联系酷默</a>
     </section>
   </main>
-
-  <!-- ======================================================================
-       Site Footer (shared across all pages - keep structure identical)
-       NOTE: Contact items use `data-config` attributes; values are injected by
-       the ConfigBinder in js/main.js from SiteConfig to avoid data drift.
-       Keep the `data-config` keys in sync with SiteConfig field names.
-       The copyright year is filled dynamically via `#footer-year`.
-       ====================================================================== -->
-  <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <div class="site-footer__brand">
-                <a class="brand brand--footer" href="index.html" aria-label="酷默 cmmmo 首页">
-          <img class="brand__logo" src="images/brand/cmmmo-logo-co.png" width="44" height="28" alt="cmmmo CO logo" />
-          <span class="brand__name">
-            酷默 cmmmo
-            <small>CEEMO Technology</small>
-          </span>
+<footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <a class="footer__brand" href="index.html">
+          <img src="images/brand/logo-mark.png" width="116" height="80" alt="">
+          <span>cmmmo 酷默</span>
         </a>
-        <p class="site-footer__desc">
-          温州酷默技术科技有限公司致力于以专业的技术与优质的服务，为客户创造长期价值。
-        </p>
+        <p>温州酷默技术科技有限公司<br>品牌 酷默 / cmmmo / CEEMO</p>
       </div>
-
-      <nav class="site-footer__nav" aria-label="页脚导航">
-        <h3 class="site-footer__heading">快速导航</h3>
-                <ul class="site-footer__list">
+      <div>
+        <h2>浏览</h2>
+        <ul>
           <li><a href="index.html">首页</a></li>
           <li><a href="about.html">关于我们</a></li>
           <li><a href="products.html">产品中心</a></li>
           <li><a href="product-x1pro.html">X1 Pro</a></li>
           <li><a href="contact.html">联系我们</a></li>
         </ul>
-      </nav>
-
-      <div class="site-footer__contact">
-        <h3 class="site-footer__heading">联系方式</h3>
-        <ul class="site-footer__list">
+      </div>
+      <div>
+        <h2>联系</h2>
+        <ul>
           <li>地址：<span data-config="address">浙江省温州市鹿城区南汇街道车站大道577号财富中心1504室-6</span></li>
           <li>电话：<span data-config="phone">待补充</span></li>
-          <li>邮箱：<span data-config="email">contact@cmmmo.com</span></li>
-          <li>法人：<span data-config="legalPerson">黄海湖</span></li>
+          <li>邮箱：<a href="mailto:contact@cmmmo.com"><span data-config="email">contact@cmmmo.com</span></a></li>
+          <li>法定代表人：<span data-config="legalPerson">黄海湖</span></li>
         </ul>
       </div>
     </div>
-
-    <div class="site-footer__bottom">
-      <div class="container">
-        <p class="site-footer__copyright">
-          &copy; <span id="footer-year">2024</span> 温州酷默技术科技有限公司 版权所有
-        </p>
-      </div>
-    </div>
+    <p class="footer__legal">© <span id="footer-year">2026</span> 温州酷默技术科技有限公司。图片为效果图，以实物为准。本站为品牌展示，不提供在线支付。</p>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>
