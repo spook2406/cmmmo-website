@@ -3,291 +3,201 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="温州酷默技术科技有限公司（酷默 / cmmmo / CEEMO）官方网站，专注技术服务与健康智能硬件，旗舰产品酷默电动剃须刀 X1 Pro。" />
-  <title>酷默 cmmmo | 温州酷默技术科技有限公司</title>
-    <link rel="icon" type="image/png" href="images/brand/favicon.png" />
-  <link rel="apple-touch-icon" href="images/brand/cmmmo-logo-co.png" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="theme-color" content="#0b0b0c" />
+  <title>酷默 / CMMMO — 极简 · 黑金 · 未来</title>
+  <meta name="description" content="酷默 / CMMMO 以极简设计与黑金质感，重新定义高端科技生活方式。探索主推产品、品牌理念与专属服务。" />
+  <meta name="author" content="温州酷默技术科技有限公司" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="酷默 / CMMMO" />
+  <meta property="og:title" content="酷默 / CMMMO — 极简 · 黑金 · 未来" />
+  <meta property="og:description" content="酷默 / CMMMO 以极简设计与黑金质感，重新定义高端科技生活方式。探索主推产品、品牌理念与专属服务。" />
+  <meta property="og:image" content="images/og-cover.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="酷默 / CMMMO" />
+  <meta property="og:url" content="index.html" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="酷默 / CMMMO — 极简 · 黑金 · 未来" />
+  <meta name="twitter:description" content="酷默 / CMMMO 以极简设计与黑金质感，重新定义高端科技生活方式。探索主推产品、品牌理念与专属服务。" />
+  <meta name="twitter:image" content="images/og-cover.jpg" />
+  <meta name="twitter:image:alt" content="酷默 / CMMMO" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-  <!-- ======================================================================
-       Site Header (shared across all pages - keep structure identical)
-       ====================================================================== -->
-  <header class="site-header">
-    <div class="container site-header__inner">
-            <a class="brand" href="index.html" aria-label="酷默 cmmmo 首页">
-        <img class="brand__logo" src="images/brand/cmmmo-logo-co.png" width="44" height="28" alt="cmmmo CO logo" />
-        <span class="brand__name">
-          酷默 cmmmo
-          <small>温州酷默技术科技</small>
-        </span>
+  <header class="site-header" data-nav>
+    <nav class="nav" aria-label="主导航">
+      <a class="nav__brand" href="index.html" aria-label="酷默 / CMMMO">
+        <span class="nav__brand-mark" aria-hidden="true">C</span>
+        <span class="nav__brand-text"><span class="nav__brand-zh">酷默</span><span class="nav__brand-sep"> / </span><span class="nav__brand-en">CMMMO</span></span>
       </a>
-
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-label="切换导航菜单"
-        aria-expanded="false"
-        aria-controls="primary-navigation"
-      >
-        <span class="nav-toggle__bar" aria-hidden="true"></span>
-        <span class="nav-toggle__bar" aria-hidden="true"></span>
-        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      <ul class="nav__links">
+        <li><a class="nav__link is-active" href="index.html" aria-current="page">首页</a></li><li><a class="nav__link" href="product.html">产品</a></li><li><a class="nav__link" href="about.html">关于</a></li><li><a class="nav__link" href="contact.html">联系</a></li>
+      </ul>
+      <div class="lang-switch" role="navigation" aria-label="语言"><a class="lang-switch__link is-active" href="index.html" aria-current="page">中文</a><a class="lang-switch__link" href="en/index.html">English</a><a class="lang-switch__link" href="ja/index.html">日本語</a><a class="lang-switch__link" href="es/index.html">Español</a></div>
+      <button class="nav__toggle" type="button" aria-label="打开菜单" aria-controls="mobile-menu" aria-expanded="false" data-menu-toggle>
+        <span class="nav__toggle-bars" aria-hidden="true"></span>
       </button>
-
-      <nav class="nav-menu" id="primary-navigation" aria-label="主导航">
-                <ul class="nav-menu__list">
-          <li><a class="nav-menu__link" href="index.html">首页</a></li>
-          <li><a class="nav-menu__link" href="about.html">关于我们</a></li>
-          <li><a class="nav-menu__link" href="products.html">产品中心</a></li>
-          <li><a class="nav-menu__link" href="product-x1pro.html">X1 Pro</a></li>
-          <li><a class="nav-menu__link" href="contact.html">联系我们</a></li>
-        </ul>
-        <a class="btn btn--primary btn--block nav-menu__cta" href="contact.html">
-          立即咨询
-        </a>
-      </nav>
-    </div>
+    </nav>
   </header>
-
-  <main>
-    <!-- ====================================================================
-         Hero Section
-         ==================================================================== -->
-    <section class="hero">
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="移动端导航" aria-hidden="true" data-mobile-menu>
+    <ul class="mobile-menu__links">
+      <li><a class="mobile-menu__link is-active" href="index.html" aria-current="page">首页</a></li><li><a class="mobile-menu__link" href="product.html">产品</a></li><li><a class="mobile-menu__link" href="about.html">关于</a></li><li><a class="mobile-menu__link" href="contact.html">联系</a></li>
+    </ul>
+    <div class="mobile-menu__langs"><div class="lang-switch" role="navigation" aria-label="语言"><a class="lang-switch__link is-active" href="index.html" aria-current="page">中文</a><a class="lang-switch__link" href="en/index.html">English</a><a class="lang-switch__link" href="ja/index.html">日本語</a><a class="lang-switch__link" href="es/index.html">Español</a></div></div>
+    <div class="mobile-menu__footer">
+      <p>温州酷默技术科技有限公司</p>
+      <p><a href="mailto:huanghaihu@cmmmo.com">huanghaihu@cmmmo.com</a></p>
+      <p>浙江省温州市鹿城区南汇街道车站大道577号财富中心1504室-6</p>
+    </div>
+  </div>
+  <main id="main" tabindex="-1">
+    <section class="section section--flush-top hero" aria-labelledby="hero-title">
       <div class="container hero__inner">
-        <div class="hero__content">
-          <span class="hero__eyebrow">酷默 cmmmo · 技术与健康双轮驱动</span>
-          <h1 class="hero__title">
-            掌心大小，净剃有型<br />
-            <em>酷默电动剃须刀 X1 Pro</em>
-          </h1>
-          <p class="hero__lead">
-            温州酷默技术科技有限公司（品牌 酷默 / cmmmo / CEEMO）专注技术服务与健康智能硬件。
-            旗舰产品 X1 Pro：干湿双剃、全身水洗、Type-C 快充、AI A1 芯片，出差揣兜就走。
-          </p>
+        <div class="hero__copy reveal">
+          <span class="eyebrow">酷默 / CMMMO · 2026</span>
+          <h1 id="hero-title" class="display">极简之上，<br />黑金之境。</h1>
+          <p class="lead measure">以克制的设计语言与考究的材质工艺，酷默 / CMMMO 将科技与美学融为一体，为追求品质的生活者带来全新的感官体验。</p>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="product-x1pro.html">了解 X1 Pro</a>
-            <a class="btn btn--ghost-light" href="contact.html">联系我们</a>
+            <a class="btn btn--primary" href="product.html">探索产品</a>
+            <a class="btn btn--ghost" href="about.html">了解品牌</a>
           </div>
         </div>
-
-        <!-- Decorative visual: hidden from assistive tech, no role="img". -->
-        <div class="hero__visual">
-          <img class="hero__visual-img" src="images/x1pro/hero-palm.png" width="720" height="1280" alt="酷默 cmmmo X1 Pro 掌心大小电动剃须刀" />
-        </div>
+        <figure class="hero__media reveal">
+          <img src="images/hero-main.jpg" alt="酷默 / CMMMO 主推产品主视觉" width="1600" height="1000" loading="eager" fetchpriority="high" decoding="async" />
+        </figure>
       </div>
     </section>
 
-    <!-- ====================================================================
-         Company Intro Summary
-         ==================================================================== -->
-    <section class="section">
+    <section class="section section--alt" aria-labelledby="highlight-title">
       <div class="container">
-        <div class="section__header" data-reveal>
-          <span class="section__eyebrow">关于 CEEMO</span>
-          <h2 class="section__title">值得信赖的长期合作伙伴</h2>
-          <p class="section__subtitle">
-            温州酷默技术科技有限公司深耕行业多年，以专业的技术团队与完善的服务体系，
-            为众多客户提供稳定可靠的产品与解决方案。
-          </p>
+        <div class="section__head reveal">
+          <span class="eyebrow">主推产品</span>
+          <h2 id="highlight-title" class="h2">为细节而生的设计</h2>
+          <p class="lead measure measure--center text-center">每一处曲线、每一道光泽，都经过反复推敲。酷默 / CMMMO 主推产品以极简轮廓承载黑金质感，在光影之间呈现恰到好处的平衡。</p>
         </div>
-
-        <div class="grid grid--3">
-          <article class="card" data-reveal>
-            <span class="card__icon" aria-hidden="true">
-              <svg
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round"
-              >
-                <path d="M12 2 L2 7 L12 12 L22 7 Z" />
-                <path d="M2 17 L12 22 L22 17" />
-                <path d="M2 12 L12 17 L22 12" />
-              </svg>
-            </span>
-            <h3 class="card__title">专业团队</h3>
-            <p class="card__text">
-              汇聚行业资深工程师与顾问，以严谨的工程标准保障每一个项目的交付质量。
-            </p>
-          </article>
-
-          <article class="card" data-reveal>
-            <span class="card__icon" aria-hidden="true">
-              <svg
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round"
-              >
-                <path d="M13 2 L3 14 L12 14 L11 22 L21 10 L12 10 Z" />
-              </svg>
-            </span>
-            <h3 class="card__title">高效交付</h3>
-            <p class="card__text">
-              成熟的流程与敏捷的协作方式，帮助客户在最短周期内获得可落地的成果。
-            </p>
-          </article>
-
-          <article class="card" data-reveal>
-            <span class="card__icon" aria-hidden="true">
-              <svg
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round"
-              >
-                <path d="M12 22 C12 22 20 16 20 9 A8 8 0 0 0 4 9 C4 16 12 22 12 22 Z" />
-                <circle cx="12" cy="9" r="3" />
-              </svg>
-            </span>
-            <h3 class="card__title">持续创新</h3>
-            <p class="card__text">
-              持续投入研发与技术创新，紧跟行业趋势，为客户创造长期价值。
-            </p>
-          </article>
+        <div class="grid grid--2 highlight">
+          <figure class="highlight__media reveal">
+            <img src="images/product-cutout.png" alt="酷默 / CMMMO 主推产品透明抠图" width="1200" height="1200" loading="lazy" decoding="async" />
+          </figure>
+          <div class="highlight__copy reveal">
+            <h3 class="h3">黑金质感 · 一体成型</h3>
+            <p class="text-muted">采用航空级合金与纳米级镀层工艺，机身一体成型，触感温润而坚固。深邃黑与低调金在光线下自然过渡，呈现克制而高级的视觉层次。</p>
+            <ul class="feature-list">
+              <li>航空级合金机身，轻盈坚固</li>
+              <li>纳米镀层工艺，耐磨抗指纹</li>
+              <li>极简交互，一触即达</li>
+            </ul>
+            <a class="btn btn--gold" href="product.html">查看产品详情</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ====================================================================
-         Core Products / Advantages
-         ==================================================================== -->
-    <section class="section section--alt">
+    <section class="section" aria-labelledby="gallery-title">
       <div class="container">
-        <div class="section__header" data-reveal>
-          <span class="section__eyebrow">核心产品</span>
-          <h2 class="section__title">面向未来的产品矩阵</h2>
-          <p class="section__subtitle">
-            覆盖多个业务场景的产品与解决方案，满足不同规模企业的多样化需求。
-          </p>
+        <div class="section__head reveal">
+          <span class="eyebrow">产品画廊</span>
+          <h2 id="gallery-title" class="h2">多视角呈现</h2>
+          <p class="lead measure measure--center text-center">从主图到透明抠图，多角度展示酷默 / CMMMO 的黑金质感与一体成型工艺。</p>
         </div>
+        <div class="gallery gallery--home">
+          <figure class="gallery__item reveal">
+            <img src="images/gallery/main-01.jpg" alt="酷默 / CMMMO 产品画廊 1" width="1200" height="1200" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="images/gallery/main-02.jpg" alt="酷默 / CMMMO 产品画廊 2" width="1200" height="1200" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="images/gallery/main-03.jpg" alt="酷默 / CMMMO 产品画廊 3" width="1200" height="1200" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="images/gallery/main-04.jpg" alt="酷默 / CMMMO 产品画廊 4" width="1200" height="1200" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="images/gallery/main-05.jpg" alt="酷默 / CMMMO 产品画廊 5" width="1200" height="1200" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="images/gallery/main-06.jpg" alt="酷默 / CMMMO 产品画廊 6" width="1200" height="1200" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="images/gallery/main-07.jpg" alt="酷默 / CMMMO 产品画廊 7" width="1200" height="1200" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="images/gallery/cutout-01.png" alt="酷默 / CMMMO 产品画廊 8" width="1200" height="1200" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="images/gallery/cutout-02.png" alt="酷默 / CMMMO 产品画廊 9" width="1200" height="1200" loading="lazy" decoding="async" />
+          </figure>
+        </div>
+      </div>
+    </section>
 
-                <div class="grid grid--3">
-          <article class="product-card" data-reveal>
-            <a class="product-card__media" href="product-x1pro.html">
-              <img src="images/x1pro/hero-palm.png" alt="酷默 X1 Pro" loading="lazy" />
-            </a>
-            <div class="product-card__body">
-              <h3 class="product-card__title">酷默 X1 Pro</h3>
-              <p class="product-card__text">
-                掌心大小电动剃须刀：干湿双剃、全身水洗、Type-C 快充、AI A1 芯片。
-              </p>
-              <ul class="product-card__tags">
-                <li class="tag">硬件</li>
-                <li class="tag">旗舰</li>
-              </ul>
-            </div>
+    <section class="section section--dark" aria-labelledby="philosophy-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">品牌理念</span>
+          <h2 id="philosophy-title" class="h2">少即是多，静水流深</h2>
+          <p class="lead measure measure--center text-center">我们相信，真正的品质无需喧哗。酷默 / CMMMO 以极简为方法，以质感为语言，让每一件产品都成为时间与工艺的沉淀。</p>
+        </div>
+        <div class="grid grid--3 philosophy">
+          <article class="philosophy__item reveal">
+            <h3 class="h3">克制设计</h3>
+            <p class="text-muted">去除多余装饰，只保留必要的线条与结构，让产品回归本质。</p>
           </article>
-
-          <article class="product-card" data-reveal>
-            <div class="product-card__media">
-              <img src="images/x1pro/feature-motor.png" alt="强磁电机" loading="lazy" />
-            </div>
-            <div class="product-card__body">
-              <h3 class="product-card__title">健康智能硬件</h3>
-              <p class="product-card__text">
-                围绕护理与出行场景持续打磨小体积、强续航、易清洁的智能硬件。
-              </p>
-              <ul class="product-card__tags">
-                <li class="tag">健康</li>
-                <li class="tag">硬件</li>
-              </ul>
-            </div>
+          <article class="philosophy__item reveal">
+            <h3 class="h3">考究工艺</h3>
+            <p class="text-muted">从选材到成型，每一道工序都经过严格把控，只为呈现细腻质感。</p>
           </article>
-
-          <article class="product-card" data-reveal>
-            <div class="product-card__media" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="9" />
-                <path d="M12 3 L12 12 L18 15" />
-              </svg>
-            </div>
-            <div class="product-card__body">
-              <h3 class="product-card__title">技术服务</h3>
-              <p class="product-card__text">
-                软件开发、数字化与定制化解决方案，服务企业客户业务落地。
-              </p>
-              <ul class="product-card__tags">
-                <li class="tag">软件</li>
-                <li class="tag">服务</li>
-              </ul>
-            </div>
+          <article class="philosophy__item reveal">
+            <h3 class="h3">长久陪伴</h3>
+            <p class="text-muted">以耐用与可靠为底线，让产品在岁月中依然从容优雅。</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ====================================================================
-         CTA Section
-         ==================================================================== -->
     <section class="section" aria-labelledby="cta-title">
       <div class="container">
-        <div class="cta" data-reveal>
-          <div class="cta__content">
-            <h2 class="cta__title" id="cta-title">准备好开启合作了吗？</h2>
-            <p class="cta__text">
-              无论您处于哪个发展阶段，CEEMO 都愿意成为您值得信赖的技术伙伴。
-              欢迎随时与我们取得联系。
-            </p>
-          </div>
+        <div class="cta reveal">
+          <h2 id="cta-title" class="h2">与酷默 / CMMMO 一同，探索更多可能</h2>
+          <p class="lead measure measure--center text-center">无论是产品咨询还是合作洽谈，我们都期待与你交流。</p>
           <div class="cta__actions">
-            <a class="btn btn--primary" href="contact.html">立即咨询</a>
-            <a class="btn btn--outline" href="about.html">了解更多</a>
+            <a class="btn btn--primary" href="contact.html">联系我们</a>
+            <a class="btn btn--ghost" href="product.html">浏览产品</a>
           </div>
         </div>
       </div>
     </section>
   </main>
-
-  <!-- ======================================================================
-       Site Footer (shared across all pages - keep structure identical)
-       NOTE: Contact items use `data-config` attributes; values are injected by
-       the ConfigBinder in js/main.js from SiteConfig to avoid data drift.
-       Keep the `data-config` keys in sync with SiteConfig field names.
-       The copyright year is filled dynamically via `#footer-year`.
-       ====================================================================== -->
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div class="site-footer__brand">
-                <a class="brand brand--footer" href="index.html" aria-label="酷默 cmmmo 首页">
-          <img class="brand__logo" src="images/brand/cmmmo-logo-co.png" width="44" height="28" alt="cmmmo CO logo" />
-          <span class="brand__name">
-            酷默 cmmmo
-            <small>CEEMO Technology</small>
-          </span>
+        <a class="nav__brand" href="index.html" aria-label="酷默 / CMMMO">
+          <span class="nav__brand-mark" aria-hidden="true">C</span>
+          <span class="nav__brand-text"><span class="nav__brand-zh">酷默</span><span class="nav__brand-sep"> / </span><span class="nav__brand-en">CMMMO</span></span>
         </a>
-        <p class="site-footer__desc">
-          温州酷默技术科技有限公司致力于以专业的技术与优质的服务，为客户创造长期价值。
-        </p>
+        <p class="text-muted">极简 · 黑金 · 未来</p>
       </div>
-
       <nav class="site-footer__nav" aria-label="页脚导航">
-        <h3 class="site-footer__heading">快速导航</h3>
-                <ul class="site-footer__list">
-          <li><a href="index.html">首页</a></li>
-          <li><a href="about.html">关于我们</a></li>
-          <li><a href="products.html">产品中心</a></li>
-          <li><a href="product-x1pro.html">X1 Pro</a></li>
-          <li><a href="contact.html">联系我们</a></li>
+        <ul>
+          <li><a href="index.html">首页</a></li><li><a href="product.html">产品</a></li><li><a href="about.html">关于</a></li><li><a href="contact.html">联系</a></li>
         </ul>
       </nav>
-
       <div class="site-footer__contact">
-        <h3 class="site-footer__heading">联系方式</h3>
-        <ul class="site-footer__list">
-          <li>地址：<span data-config="address">浙江省温州市鹿城区南汇街道车站大道577号财富中心1504室-6</span></li>
-          <li>电话：<span data-config="phone">待补充</span></li>
-          <li>邮箱：<span data-config="email">contact@cmmmo.com</span></li>
-          <li>法人：<span data-config="legalPerson">黄海湖</span></li>
-        </ul>
+        <p class="text-muted">温州酷默技术科技有限公司</p>
+        <p class="text-muted"><a href="mailto:huanghaihu@cmmmo.com">huanghaihu@cmmmo.com</a></p>
+        <p class="text-muted">浙江省温州市鹿城区南汇街道车站大道577号财富中心1504室-6</p>
       </div>
     </div>
-
-    <div class="site-footer__bottom">
-      <div class="container">
-        <p class="site-footer__copyright">
-          &copy; <span id="footer-year">2024</span> 温州酷默技术科技有限公司 版权所有
-        </p>
-      </div>
+    <div class="container site-footer__legal">
+      <p class="text-muted">© <span data-current-year>2026</span> 酷默 / CMMMO. All rights reserved.</p>
     </div>
   </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
